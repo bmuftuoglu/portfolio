@@ -13,26 +13,36 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p>
-                ODTÜ Bilgisayar Mühendisliği ve Bilişim Teknolojileri (CEIT) bölümü öğrencisiyim.
+                Intertech&apos;te System Engineer olarak görev yapıyorum. OpenShift, Jenkins ve
+                Ansible ile büyük ölçekli altyapı otomasyonu geliştiriyorum.
               </p>
               <p>
-                Yazılım geliştirme tutkuyla yaklaştığım bir alan. Modern web teknolojilerini
-                kullanarak hem estetik hem de performanslı uygulamalar geliştirmeyi seviyorum.
-              </p>
-              <p>
-                Front-end&apos;den back-end&apos;e, veritabanı tasarımından deployment&apos;a kadar
-                full-stack bir perspektifle projelere yaklaşıyorum.
+                Front-end&apos;den back-end&apos;e, mobil uygulamalardan DevOps altyapısına kadar
+                geniş bir yelpazede proje geliştiriyorum.
               </p>
             </div>
 
-            <div className="mt-6 inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
-              <svg className="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-              </svg>
-              <div>
-                <p className="text-xs text-gray-500">Üniversite</p>
-                <p className="text-sm text-white font-medium">ODTÜ — CEIT (Bilgisayar Müh. ve Bilişim Tek.)</p>
+            {/* Education */}
+            <div className="mt-6 space-y-3">
+              <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 w-full">
+                <svg className="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                <div>
+                  <p className="text-xs text-gray-500">Lisans — 2020 / Günümüz</p>
+                  <p className="text-sm text-white font-medium">ODTÜ — Bilgisayar ve Öğretim Teknolojileri Eğitimi</p>
+                </div>
+              </div>
+              <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 w-full">
+                <svg className="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                <div>
+                  <p className="text-xs text-gray-500">Ön Lisans — 2021 / 2023</p>
+                  <p className="text-sm text-white font-medium">Atatürk Üniversitesi — Bilgisayar Programcılığı</p>
+                </div>
               </div>
             </div>
 
@@ -65,10 +75,10 @@ export default function About() {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { value: "10+", label: "Tamamlanan Proje" },
-              { value: "3+", label: "Yıl Deneyim" },
-              { value: "5+", label: "Kullanılan Teknoloji" },
-              { value: "100%", label: "Müşteri Memnuniyeti" },
+              { value: "8+", label: "Tamamlanan Proje" },
+              { value: "2+", label: "Yıl Deneyim" },
+              { value: "10+", label: "Teknoloji" },
+              { value: "3", label: "Yayınlanan Uygulama" },
             ].map((stat) => (
               <div
                 key={stat.label}

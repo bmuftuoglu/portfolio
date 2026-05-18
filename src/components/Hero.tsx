@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-400 mb-8">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          Yeni projeler için müsait
+          System Engineer @ Intertech
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
@@ -25,7 +25,8 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Yazılım geliştirici. Modern web uygulamaları ve kullanıcı deneyimi odaklı projeler üretiyorum.
+          Yazılım geliştirici & System Engineer. Altyapı otomasyonundan mobil uygulamalara,
+          web&apos;den DevOps&apos;a geniş bir yelpazede proje üretiyorum.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
