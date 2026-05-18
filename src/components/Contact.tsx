@@ -41,12 +41,12 @@ export default function Contact() {
                 <div>
                   <p className="text-xs text-gray-500 mb-1">GitHub</p>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/bmuftuoglu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-purple-400 transition-colors text-sm"
                   >
-                    github.com/kullaniciadi
+                    github.com/bmuftuoglu
                   </a>
                 </div>
               </div>
@@ -60,12 +60,12 @@ export default function Contact() {
                 <div>
                   <p className="text-xs text-gray-500 mb-1">LinkedIn</p>
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/barışmüftüoğlu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-purple-400 transition-colors text-sm"
                   >
-                    linkedin.com/in/kullaniciadi
+                    linkedin.com/in/barışmüftüoğlu
                   </a>
                 </div>
               </div>

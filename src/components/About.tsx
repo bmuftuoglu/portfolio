@@ -24,7 +24,7 @@ export default function About() {
 
             <div className="mt-8 flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/bmuftuoglu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
@@ -35,7 +35,7 @@ export default function About() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/barışmüftüoğlu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
