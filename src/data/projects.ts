@@ -105,6 +105,49 @@ Jenkins pipeline, Ansible ve Linux shell scripting kullanılarak yeni node eklem
     language: "YAML",
   },
   {
+    slug: "telegram-home-server",
+    title: "Telegram Home Server",
+    shortDescription:
+      "Kişisel ev otomasyonu için merkezi Telegram bot gateway'i. Harici servislerden gelen bildirimleri Telegram'a iletir, komutları ilgili servislere yönlendirir.",
+    description: `Telegram Home Server, ev otomasyonu için geliştirilen modüler bir Telegram bot altyapısıdır.
+
+Bağımsız servisler "homebot" adlı paylaşılan Docker network üzerinden gateway'e bağlanır; her servis kendi komutlarını ve bildirimlerini sisteme ekler.
+
+**Özellikler:**
+- Harici servislerden gelen bildirimleri POST /notify endpoint'i ile Telegram'a iletme
+- Telegram komutlarını ilgili iç servislere yönlendirme
+- Bağlı servislerin dinamik komut listesi (/services komutu)
+- Yetkisiz erişime karşı izin listesi tabanlı kullanıcı doğrulaması
+- Docker Compose ile kolay kurulum ve ölçeklendirme
+- Long polling (açık inbound port gerektirmez)`,
+    tags: ["Python", "Docker", "Telegram Bot", "Home Automation", "REST API"],
+    github: "https://github.com/bmuftuoglu/telegram-home-server",
+    language: "Python",
+  },
+  {
+    slug: "aski-telegram-bot",
+    title: "ASKİ Water Watch",
+    shortDescription:
+      "ASKİ su kesintisi sayfasını periyodik olarak izleyen ve belirlenen ilçe/mahalle için kesinti başlayınca Telegram üzerinden bildirim gönderen Python servisi.",
+    description: `ASKİ Water Watch, Ankara Su ve Kanalizasyon İdaresi'nin kesinti sayfasını düzenli aralıklarla kontrol eden bir HTTP servisidir.
+
+telegram-home-server ile entegre çalışır; kesinti başladığında veya sona erdiğinde otomatik Telegram bildirimi gönderir.
+
+**Mimari:**
+- ASKİ sitesi → aski-water-watch → telegram-home-server → Telegram
+
+**Özellikler:**
+- Her 5 dakikada bir ASKİ sayfasını tarayarak kesinti tespiti
+- Kesinti başlangıcı ve bitişinde anlık Telegram bildirimi
+- /aski_durum ve /aski_kontrol Telegram komutları
+- REST API ile manuel kontrol ve durum sorgulama
+- Docker Compose ile kurulum; homebot Docker network üzerinden entegrasyon
+- Pytest ile test kapsamı`,
+    tags: ["Python", "Docker", "Telegram Bot", "Automation", "Web Scraping", "REST API"],
+    github: "https://github.com/bmuftuoglu/aski-telegram-bot",
+    language: "Python",
+  },
+  {
     slug: "instagram-unfollowers",
     title: "Instagram Unfollowers",
     shortDescription:
